@@ -19,6 +19,14 @@
 	outline: unset;
 }
 
+.form input[type="date"]r{
+	font-family: inherit;
+}
+
+.form input[type="date"]::-webkit-calendar-picker-indicator{
+	display: none;
+}
+
 .label {
   padding-bottom: 2px;
 	margin-right: 0.5em;

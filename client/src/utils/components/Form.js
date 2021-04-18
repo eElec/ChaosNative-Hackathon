@@ -10,6 +10,7 @@ const Form = ({
 	PreIcon,
 	PostIcon,
 	width,
+	type
 }) => {
 	return (
 		<div className={styles.form}>
@@ -17,6 +18,7 @@ const Form = ({
 			{PreIcon ? <PreIcon className={styles.preIcon} /> : <></>}
 			<input
 				style={{ width: `${width}ch` }}
+				type={type?type:'text'}
 				value={value}
 				placeholder={placeholder}
 				onChange={handleChange}
