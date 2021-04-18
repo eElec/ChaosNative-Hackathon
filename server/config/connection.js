@@ -9,7 +9,7 @@ const connection = mysql.createPool({
   user: keys.db.user,
   password: keys.db.password,
   database: keys.db.database,
-  timezone: '+5:30',
+  timezone: '+00:00',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
