@@ -1,6 +1,6 @@
 export function dateToStr(date) {
 	return `${('0' + date.getUTCDate()).slice(-2)}/${(
-		'0' + date.getUTCMonth()
+		'0' + (date.getUTCMonth()+1)
 	).slice(-2)}/${date.getUTCFullYear()}`;
 }
 
@@ -14,14 +14,11 @@ export function timeToStr(date) {
 
 // https://stackoverflow.com/a/23641753
 export function parseDateFromInput(s) {
-	var b = s.split(/\D/);
-	return new Date(b[0], --b[1], b[2]);
+	let b = s.split(/\D/);
+	return new Date(Date.UTC(b[0], b[1], b[2]));
 }
 
-export function parseInputFromDate(d) {
-	if (d) {
-		console.log(`${d.getFullYear()}-${('0' + d.getMonth()).slice(-2)}-${('0' + d.getDate()).slice(-2)}`);
-		return `${d.getFullYear()}-${('0' + d.getMonth()).slice(-2)}-${('0' + d.getDate()).slice(-2)}`;
-	}
-	return '';
+export function parseTimeFromInput(d, s) {
+	let b = s.split(/\D/);
+	return new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), b[0], b[1]));
 }

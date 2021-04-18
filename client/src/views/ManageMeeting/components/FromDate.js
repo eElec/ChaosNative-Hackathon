@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeFromDate } from 'actions/actions';
 
 import Form from '@utils/components/Form';
-import { ReactComponent as Calendar } from '@assets/icons/calendar.svg';
 
 const FromDate = () => {
 	const fromDate = useSelector((state) => state.fromDate);
@@ -24,7 +23,6 @@ const FromDate = () => {
 				placeholder='Search'
 				handleChange={handleChange}
 				label='From'
-				PostIcon={Calendar}
 			/>
 		</div>
 	);

@@ -13,7 +13,9 @@ const ManageMeeting = () => {
 			<Paper>
 				<Filter />
 			</Paper>
-			<Paper><Table /></Paper>
+			<Paper style={{ height: '40%', padding: '2em 4em'}}>
+				<Table />
+			</Paper>
 		</div>
 	);
 };

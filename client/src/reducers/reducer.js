@@ -1,8 +1,8 @@
 const initialValues = {
 	meetings: [],
 	searchTerm: '',
-	fromDate: null,
-	toDate: null,
+	fromDate: '',
+	toDate: '',
 };
 
 const mainReducer = (state = initialValues, action) => {

@@ -23,6 +23,7 @@ const Form = ({
 				placeholder={placeholder}
 				onChange={handleChange}
 			/>
+			{/* Icons for date and time values are not available in Firefox */}
 			{PostIcon ? <PostIcon className={styles.postIcon} /> : <></>}
 		</div>
 	);

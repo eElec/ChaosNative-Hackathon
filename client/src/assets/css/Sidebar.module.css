@@ -3,14 +3,13 @@
   color: #F2F2F2;
 
   display: flex;
-  min-height: 100%;
-  min-width: 10%;
-  max-width: 10%;
+  max-height: 100%;
+  min-width: 15%;
+  max-width: 15%;
   flex-grow: 1;
   transition: all .3s;
 
   font-size: 24px;
-  padding: 24px;
 }
 
 .nav {
@@ -20,6 +19,26 @@
 }
 
 .nav .header {
-  margin-bottom: 2em;
+  margin: 2em;
   text-align: center;
+  position: relative;
+}
+
+.nav .header svg {
+  position: absolute;
+  left: 0;
+  margin: 5px 0px;
+}
+
+.navLink {
+  color: #fff;
+  padding: 1em 1em;
+  text-decoration: none;
+}
+.navLink svg{
+  padding-right: 2ch;
+}
+
+.selected {
+  background-color: #133B5C;
 }
