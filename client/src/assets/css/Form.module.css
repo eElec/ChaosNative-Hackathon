@@ -1,0 +1,36 @@
+.form {
+	align-items: flex-end;
+}
+
+.form input {
+	padding: 0px;
+	border: 0px;
+	border-bottom: 2px solid #000;
+  min-width: 8ch;
+  max-width: 16ch;
+
+  font-size: 16px;
+}
+
+.form input:focus {
+	padding: 0px;
+	border: 0px;
+	border-bottom: 2px solid #000;
+	outline: unset;
+}
+
+.label {
+  padding-bottom: 2px;
+	margin-right: 0.5em;
+}
+
+.preIcon {
+	max-width: 14px;
+	padding-right: 0.5em;
+	border-bottom: 2px solid #000;
+}
+.postIcon {
+	max-width: 14px;
+	padding-left: 0.5em;
+	border-bottom: 2px solid #000;
+}

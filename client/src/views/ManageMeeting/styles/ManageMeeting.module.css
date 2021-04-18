@@ -14,7 +14,7 @@
   flex-direction: row;
 }
 
-.filter .filterItem{
+.filter div{
   display: flex;
   flex: 0.33 1;
 }
