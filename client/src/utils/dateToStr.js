@@ -8,14 +8,14 @@ export function timeToStr(date) {
 	let hours = date.getUTCHours();
 	let mins = date.getUTCMinutes();
 	return `${('0' + (hours % 12)).slice(-2)}:${('0' + mins).slice(-2)} ${
-		hours / 12 === 0 ? 'AM' : 'PM'
+		parseInt(hours / 12) === 0 ? 'AM' : 'PM'
 	}`;
 }
 
 // https://stackoverflow.com/a/23641753
 export function parseDateFromInput(s) {
 	let b = s.split(/\D/);
-	return new Date(Date.UTC(b[0], b[1], b[2]));
+	return new Date(Date.UTC(b[0], --b[1], b[2]));
 }
 
 export function parseTimeFromInput(d, s) {

@@ -19,7 +19,6 @@ const Table = () => {
 	const setMeetings = (data) => dispatch(changeRows(data));
 
 	React.useEffect(() => {
-		console.log('uwu')
 		fetchMeetings(searchTerm, fromDate, toDate);
 	}, [searchTerm, fromDate, toDate]);
 
@@ -72,7 +71,7 @@ const Table = () => {
 						);
 					})}
 					{/* Add Meeting */}
-					<AddRow />
+					<AddRow fetchMeetings={fetchMeetings}/>
 				</tbody>
 			</table>
 		</div>

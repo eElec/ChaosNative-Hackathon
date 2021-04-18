@@ -5,7 +5,7 @@ import { resetRows } from 'actions/actions';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-const AddRow = () => {
+const AddRow = (props) => {
 	const [name, setName] = React.useState('');
 	const [members, setMembers] = React.useState();
 	const [date, setDate] = React.useState('');
@@ -51,7 +51,7 @@ const AddRow = () => {
 
 		console.log(sTime, eTime)
 		addMeeting(name, members, sTime, eTime).then((resp) => {
-			resetRow();
+			props.fetchMeetings();
 		});
 	};
 
