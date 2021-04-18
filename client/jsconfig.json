@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"baseUrl": "src/",
+		"jsx": "react",
+		"paths": {
+			"@components/*": ["components/*"],
+			"@assets/*": ["assets/*"],
+			"@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
+      "@views/*": ["views/*"]
+		},
+		"module": "es2020",
+		"moduleResolution": "node"
+	},
+	"typeAcquisition": {
+		"exclude": ["dotenv"]
+	}
+}
