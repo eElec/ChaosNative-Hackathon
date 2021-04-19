@@ -17,6 +17,7 @@ const Form = ({
 			{label ? <span className={styles.label}>{label}: </span> : <></>}
 			{PreIcon ? <PreIcon className={styles.preIcon} /> : <></>}
 			<input
+				data-testid="form-test"
 				style={{ width: `${width}ch` }}
 				type={type?type:'text'}
 				value={value}
