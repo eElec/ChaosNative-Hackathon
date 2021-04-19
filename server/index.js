@@ -15,7 +15,7 @@ app.use('/api/addMeeting', addMeeting);
 const removeMeeting = require('./api/removeMeeting');
 app.use('/api/removeMeeting', removeMeeting);
 
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
