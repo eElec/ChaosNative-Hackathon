@@ -1,1 +1,1 @@
-# ChaosNative FrontEnd Hackathod
+# ChaosNative FrontEnd Hackathon
